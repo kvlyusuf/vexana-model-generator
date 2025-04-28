@@ -1,16 +1,15 @@
 {
     "compilerOptions": {
-        "target": "ES2022",
-        "lib": ["ES2022"],
-        "module": "commonjs",
-        "outDir": "dist",
-        "rootDir": "src",
-        "strict": true,
-        "esModuleInterop": true,
-        "sourceMap": true,
-        "declaration": true,
-        "declarationDir": "out/types"
+      "outDir": "./out",           // Derleme çıktılarının hedef klasörü
+      "rootDir": "./src",           // Kaynak dosyaların kök dizini
+      "declaration": true,          // Bildirim dosyaları oluştur
+      "declarationMap": true,       // Bildirim dosyaları için harita oluştur
+      "esModuleInterop": true,      // ES modül uyumluluğu
+      "strict": true,               // Sıkı tür denetimi
+      "module": "commonjs",         // Modül sistemi
+      "target": "es2020",           // JavaScript hedef sürümü
+      "moduleResolution": "node"    // Modül çözümleme
     },
-    "include": ["src/**/*.ts"],
-    "exclude": ["node_modules", "out"]
-}
+    "include": ["src/**/*"],        // Dahil edilen dosyalar
+    "exclude": ["node_modules", "dist"] // Hariç tutulan dosyalar
+  }
